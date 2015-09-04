@@ -16,8 +16,16 @@ public class TheFinalCountdown : MonoBehaviour {
 			
 		LogTime (Timer);
 	}
-	private void LogTime (float seconds)
-	Debug.Log (Timer + " s ") {
+	private void LogTime (float seconds){
+	
+		float Minutes = seconds / 60;
+		Minutes = Mathf.Floor (Minutes);
+		seconds = seconds - Minutes * 60;
+		seconds = Mathf.Floor (seconds);
+		float Hours = Minutes / 60;
+		Hours = Mathf.Floor (Hours);
+	
+		Debug.Log (Hours + "h" + Minutes + "m" + seconds + "s");
 
 	}
 }
