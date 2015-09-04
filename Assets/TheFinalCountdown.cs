@@ -13,9 +13,11 @@ public class TheFinalCountdown : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Timer = Timer - Time.deltaTime;
-			Debug.Log (Timer + " s "); 
-	
+			
+		LogTime (Timer);
 	}
-	private void LogTime (float seconds);
-	LogTime () 
+	private void LogTime (float seconds)
+	Debug.Log (Timer + " s ") {
+
+	}
 }
